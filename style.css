@@ -9,6 +9,8 @@
     margin: 0 auto;
     width: 100%;
     /* 📍 Максимальная ширина для контейнера */
+    max-width: 1470px;
+    padding: 0 15px;
 }
 
 body {
@@ -32,14 +34,21 @@ header span {
     padding: 60px 0;
     min-height: 100vh;
     /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+    display: flex;
+    align-items: center;
 }
 
 .main-section .wrapper {
     /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-wrapper {
     /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+    max-width: 425px;
+    padding: 20px;
 }
 
 .main-title {
@@ -64,6 +73,7 @@ header span {
 
 .about-section .wrapper {
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    justify-content: center;
 }
 
 select {
@@ -87,6 +97,7 @@ select:hover,
 
 .info-wrapper {
     /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+    display: flex;
 }
 
 .section-title {
@@ -160,6 +171,8 @@ form {
 
 .btn:hover {
     /* 📍 Стили для кнопки при наведении курсора */
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .line {
@@ -182,6 +195,8 @@ footer {
     background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
     /* 📍 Свойство для расположения ссылки горизонтально по центру */
+    text-align: center;
+    text-decoration: underline;
 }
 
 .footer-link {
@@ -193,4 +208,5 @@ footer {
 
 .footer-link:hover {
     /* 📍 Стили для ссылки при наведении курсора */
+    cursor: pointer;
 }
